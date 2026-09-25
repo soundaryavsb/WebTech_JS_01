@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("-----If ------");
+        // 1.If Condition
+        let a=50;
+        let b=100;
+        if(a+b>300){ //False
+            console.log("a+b is greater than 300");
+        }
+        if(a+b>100){ //True
+            console.log("a+b is greater than 100");
+        }
+        console.log("-----If Else Condition------");
+        
+        // 2.If-Else Condition
+        a=50;
+        b=100;
+        if(a+b>300){ //False
+            console.log("a+b is greater than 300");
+        }
+        else{ //Executed
+            console.log("a+b is not greater than 300");
+        }
+
+        if(a+b>100){ //True
+            console.log("a+b is greater than 100");
+        }
+        else{
+               console.log("a+b is not greater than 100");
+        }
+        console.log("-----If Else ladder Condition------");
+        // 3.If-else ladder
+        a=50;
+        b=100;
+        
+        console.log("****If else block executed******");
+        
+        if(a+b>300){ //False
+            console.log("a+b is greater than 300");
+        }else if(a+b>100){ //True
+            console.log("If- else: a+b is greater than 100");
+        }
+        else{ //Executed
+            console.log("a+b is not greater than 300");
+        }
+        console.log("****If block executed******");
+        if(a+b<300){ //True
+            console.log("a+b is less than 300");
+        }else if(a+b!=300){ //True
+            console.log("a+b is not equal to 300");
+        }
+        else{
+               console.log("a+b is greated than 300");
+        }
+        console.log("****Else block executed******");
+        if(a+b>300){ //False
+            console.log("a+b is greated than 300");
+        }else if(a+b==300){ //False
+            console.log("a+b is not equal to 300");
+        }
+        else{
+            console.log("Else - a+b is less than 300");   
+        }
+        // 4.Switch case
+        let day=3;
+        let dayName;
+        switch (day) {
+            case 1:
+                dayName="Sunday"
+                break;
+            case 2:
+                dayName="Monday"
+                break;
+            case 3:
+                dayName="Tuesday"
+                break;
+            case 4:
+                dayName="Wednesday"
+                break;
+            case 5:
+                dayName="Thursday"
+                break;
+            case 1:
+                dayName="Friday"
+                break;
+            case 1:
+                dayName="Saturday"
+                break;
+            default:
+                dayName="Invalid day"
+        }
+        console.log(dayName);
+        
+    </script>
+</body>
+</html>

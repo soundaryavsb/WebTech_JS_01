@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Var
+        {
+            var a; //declaration
+            a=10; //initialisation
+            console.log(a); //10
+
+            var a; //re-declaration
+            a=20; //re-initialisation
+            console.log(a); //20
+
+            var a=30; //re-declaration & re-initialisation
+            console.log(a); //30
+        }
+            console.log(a); //30 - (Global scope)
+        //2. Let
+        {
+            let b; //declaration
+            b=50; //initialisation
+            console.log(b); //50
+
+            // let b; //re-declaration not possible
+            b=100; //re-initialisation
+            console.log(b); //100
+
+            // let b=150 //R.D & R.I not possible
+            b=150;
+            console.log(b); //150
+        }
+        // console.log(b); //ReferenceError: b is not defined
+        //3. Const
+        {
+            // const c; //declaration not possible
+            // c=1000; //initialisation not possible
+            const c=1000; //Declaration and Initialisation within same line
+            console.log(c);
+        }
+        // console.log(c); //ReferenceError: c is not defined
+    </script>
+</body>
+</html>

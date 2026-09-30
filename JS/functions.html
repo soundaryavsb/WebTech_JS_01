@@ -36,6 +36,54 @@
             console.log(mul(20,10));
             let z=mul(200,100);
             console.log(z);
+
+            //Function Expression
+            let a=function Mintu(){
+                console.log("I am Mintu");
+            }
+            a();
+
+            let b=function Chintu(){
+                console.log("I am chintu");
+            }
+            b();
+
+            //Anonymous function
+            let c=function(){
+                console.log("I am Anonymous function");
+            }
+            c();
+
+            let d=function(){
+                console.log("I am Anonymous function 2");
+            }
+            d();
+
+            //Nested function
+            function parent(){
+                console.log("I am parent");
+                child();
+                function child(){
+                    console.log("I am child");
+                }
+                child();
+            }
+            parent()
+
+            function time(){
+                console.log("I am time");
+                function past() {
+                    console.log("I am past");
+                }
+                past();
+                function future() {
+                    console.log("I am future");
+                }
+                future();
+                console.log("Focus to present and control it");
+            }
+            time();
+            
     </script>
 </body>
 </html>

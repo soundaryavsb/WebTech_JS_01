@@ -157,6 +157,45 @@
                 // [or]
             let h11=h1(71,60);
             console.log(h11);
+        //7. Call back Function
+        function Mintu(a){
+            console.log("I am mintu");
+            a();
+        }
+        Mintu(function chottu(){
+            console.log("I am chottu");
+        })
+
+        function Right(a,b){
+            console.log("I am Right");
+            a();
+            b();
+        }
+        Right(function Rav(){
+            console.log("I am Rav");
+        },function Sony(){
+            console.log("I am Sony");
+        })
+
+        //8. H.O.F. Higher Order Function
+        function calculate(a){
+            return a+1000;
+        }
+        function bonus(m,n){
+            let res=m(n);
+            console.log(res);
+        }
+        bonus(calculate,1500);
+
+        function cal(a){
+            return a+500;
+        }
+        function bon(m){
+            let res=m(800);
+            console.log(res);
+            console.log(m(12));
+        }
+        bon(cal);
     </script>
 </body>
 </html>

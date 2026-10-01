@@ -7,6 +7,14 @@
 </head>
 <body>
     <script>
+        //5. IIFE (Immediate Invoke Function Expression)
+            (function(){
+                console.log("I am IIFE");
+            })();
+
+            (function(){
+                console.log("I am IIFE 2");
+            })();
         //1. Named function
             function Raju() {
                 console.log("I am Raju");
@@ -37,7 +45,7 @@
             let z=mul(200,100);
             console.log(z);
 
-            //Function Expression
+        //2. Function Expression
             let a=function Mintu(){
                 console.log("I am Mintu");
             }
@@ -48,7 +56,7 @@
             }
             b();
 
-            //Anonymous function
+        //3. Anonymous function
             let c=function(){
                 console.log("I am Anonymous function");
             }
@@ -59,7 +67,7 @@
             }
             d();
 
-            //Nested function
+        //4. Nested function
             function parent(){
                 console.log("I am parent");
                 child();
@@ -83,6 +91,72 @@
                 console.log("Focus to present and control it");
             }
             time();
+        //6. Arrow Function
+            //With Return
+            let a1=()=>{
+                return "Hello";
+            }
+            console.log(a1());
+                // [or]
+            let a11=a1();
+            console.log(a1());
+            
+            //Without Return
+            let b1=()=>"Ready";
+            console.log(b1());
+                // [or]
+            let b11=b1();
+            console.log(b11);
+            
+            //Returning a single value by using Arrow function with Return
+            let c1=(c)=>{
+                return c
+            }
+            console.log(c1(59));
+                // [or]
+            let c11=c1(1000);
+            console.log(c11);
+
+            //Returning a single value by using Arrow function without Return
+            let d1=(d)=>{
+                return d;
+            }
+            console.log(d1(259));
+                // [or]
+            let d11=d1(359);
+            console.log(d11);
+            
+            //perform an operation with one unknown by using arrow function with return
+            let e1=(e)=>{
+                return e+100;
+            }
+            console.log(e1(377));
+                // [or]
+            let e11=e1(477);
+            console.log(e11);
+            
+            //perform an operation with one unknown by using arrow function without return
+            let f1=(f)=>f-20;
+            console.log(f1(810));
+                // [or]
+            let f11=f1(710);
+            console.log(f11);
+            
+            //perform an operation with two unknown by using arrow function with return
+            let g1=(a,b)=>{
+                return a+b;
+            }
+            console.log(g1(12,13));
+                // [or]
+            let g11=g1(75,28);
+            console.log(g11);
+            
+            //perform an operation with one unknown by using arrow function without return
+            let h1=(a,b)=>a-b;
+            console.log(h1(25,16));
+                // [or]
+            let h11=h1(71,60);
+            console.log(h11);
     </script>
 </body>
 </html>

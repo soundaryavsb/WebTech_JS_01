@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[12,23,34,45,56,67];
+        console.log(arr);
+        
+        //Inorder to get single value separately from the entire array we should use index value concept
+        arr=[12,23,34,45,56,67];
+        console.log(arr);
+        console.log(arr[0]);
+        console.log(arr[2]);
+        console.log(arr[4]);
+        
+        //Inorder to ADD single value inside the array we should use index value concept
+        let names=["raja",30,"Sai",7n,"Pushpa"];
+        console.log(names);
+
+        names[5]="Srivalli";
+        console.log(names);
+        
+        names[7]="M S Dhoni";
+        console.log(names);
+
+        names[10]="Saran";
+        console.log(names);
+        
+        console.log(names[0]);
+        console.log(names[3]);
+        console.log(names[6]);
+        console.log(names[10]);
+        console.log(names[8]);
+        
+        //Inorder to REMOVE or DELETE a single value separately from the entire array we should use delete mothod
+        console.log(names);
+        
+        delete names[4];
+        console.log(names);
+        
+        delete names[5];
+        console.log(names);
+        
+        //Nested arrays
+        let num=[10,20,[30,40],60,70,[80,90,100]];
+        console.log(num);
+        
+        console.log(num[1]);
+        console.log(num[2][1]);
+        console.log(num[3]);
+        console.log(num[5][0]);
+        console.log(num[5][2]);
+
+        let fruits=["Apple",["Banana","Dragon"],["Grapes","Orange","Papaya"],"WaterMelon","Mango"];
+        console.log(fruits[0]);
+        console.log(fruits[1]);
+        console.log(fruits[1][1]);
+        console.log(fruits[2]);
+        console.log(fruits[2][2]);
+        console.log(fruits[3]);
+        
+    </script>
+</body>
+</html>

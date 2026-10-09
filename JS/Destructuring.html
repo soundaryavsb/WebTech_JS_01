@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Destructuring
+        //1. ARRYA DESTRUCTURING
+        //Array
+        let arr=["Raja","Dinga","Chinnu","Minnu",100,6n,"Bujji"]
+        console.log(arr);
+
+        //Normal Way to get a single value - Index value
+        arr=["Raja","Dinga","Chinnu","Minnu",100,6n,"Bujji"];
+        console.log(arr);
+        console.log(arr[1]);
+        console.log(arr[3]);
+        console.log(arr[6]);
+
+        //By using Destructuring
+        let arr1=["Soundarya","Rahul","Banu","Iniyaa","Udhayaa"];
+        console.log(arr1);
+        let [a,b,c,d,e,f,g,h]=arr1;
+        console.log(a);
+        console.log(b);
+        console.log(e);
+        console.log(h);
+        
+        //2. OBJECT DESTRUCTURING
+        //Object
+        let obj={
+            name:"Raja",
+            age:25,
+            city:"Chennai",
+            country:"India"
+        }
+        console.log(obj);
+        
+        //Normal Way - Dot notation
+        console.log(obj.name);
+        console.log(obj.age);
+        console.log(obj.country);
+
+        //By Object Destructuring
+        let Person={
+            Name:"Chinnu",
+            age:18,
+            city:"Kochi",
+            State:"Kerala"
+        }
+        console.log(Person);
+        let {Name,age,State,state,city}=Person
+        console.log(city);
+        console.log(Name);
+        console.log(state);
+        
+        /*
+        DESTRUCTURING:
+        * The main purpose of destructuring is used to get the value separately from the object as well as from the array.
+        * We can perform destructuring in both array as well as object.
+        ARRAY DESTRUCTURING:
+        * We use this array destructuring concept which is used to get value separately from the entire array without using index value concept.
+        * In order to perform array destructuring, we should use square brackets[].
+        OBJECT DESTRUCTURING:
+        * We use this object Destructuring which us used to get the values separately from the entire object without using dot notation.
+        * Whenever we use this object destructuring concept we should use curly brackets{}.
+        * It is important and mandatory that keys should be same while doing destructuring.
+        */        
+
+    </script>
+</body>
+</html>

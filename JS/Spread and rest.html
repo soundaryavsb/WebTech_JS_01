@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. Arrays
+        //Normal Way
+        let arr1=[10,20];
+        console.log(arr1);
+        
+        let arr2=[30,40];
+        console.log(arr2);
+
+        //By using a new Array
+        let arr3=[10,20,30,40];
+        console.log(arr3);
+        
+        //By using SPREAD operator(without creating a new array)
+        let names1=["Sai","Raja"];
+        console.log(names1);
+        
+        let names2=[...names1,"Chintu","Bujji"];
+        console.log(names2);
+
+        let names3=[...names2,"Mintu","Dinga"];
+        console.log(names3);
+
+        //2. Object
+        //Normal Way
+        let obj1={
+            name:"Raju",
+            age:20
+        }
+        console.log(obj1);
+        
+        let obj2={
+            city:"Kochi",
+            state:"Kerala"
+        }
+        console.log(obj2);
+
+        //By creating new Object
+        let obj3={
+            name:"Raju",
+            age:20,
+            city:"Kochi",
+            state:"Kerala"
+        }
+        console.log(obj3);
+
+        //By using SPREAD operator
+        let person1={
+            Name:"Arya",
+            Age:28
+        }
+        console.log(person1);
+        
+        let person2={
+            ...person1,
+            city:"Nellore",
+            state:"AP"
+        }
+        console.log(person2);
+        
+        let person3={
+            ...person2,
+            food:"Curd Rice",
+            color:"Green"
+        }
+        console.log(person3);
+        
+    </script>
+</body>
+</html>

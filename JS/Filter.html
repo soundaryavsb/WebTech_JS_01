@@ -7,13 +7,30 @@
 </head>
 <body>
     <script>
-        let num=[10,20,30,70,100,300,600,900];
+        let num=[10,20,30,70,100,300,600,900,800];
         
         let a=num.filter(a=>a>300);
         console.log(a);
 
         let b=num.filter(minMax=>minMax<20||minMax>600);
         console.log(b);
+
+        //Max and Min
+        //Without filter:
+        console.log("Max: "+Math.max(...num));
+        console.log("Min: "+Math.min(...num));
+
+        //With Filter
+        let min=num.filter(a=>a===Math.min(...num));
+        console.log("Filter - Min Only: "+min);
+
+        let max=num.filter(a=>a===Math.max(...num));
+        console.log("Filter - Max Only: "+max);
+
+        let minMax=num.filter(a=>a===Math.min(...num)||a===Math.max(...num));
+        console.log("Filter - Min and Max value: "+minMax);
+        console.log(minMax);
+        
     </script>
 </body>
 </html>

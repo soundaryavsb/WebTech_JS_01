@@ -30,7 +30,22 @@
         let minMax=num.filter(a=>a===Math.min(...num)||a===Math.max(...num));
         console.log("Filter - Min and Max value: "+minMax);
         console.log(minMax);
-        
+
+        //filter in STRING
+        let fruits=["Apple","Banana","Mango","PipeApple","Watermelon"];
+
+        let c=fruits.filter((m)=>m=="Apple")
+        console.log(c);
+
+        let d=fruits.filter((n)=>n<"C");
+        console.log(d);
+
+        let e=fruits.filter((x)=>x<"Mango");
+        console.log(e);
+
+        let f=fruits.filter((y)=>y=="Apple" || y=="Watermelon");
+        console.log(f);
+
     </script>
 </body>
 </html>

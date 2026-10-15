@@ -6,13 +6,15 @@
     <title>DOM in JS</title>
 </head>
 <body>
-    <h1 id="demo">Arya</h1>
-    <p>Riya</p>
-    <h2 class="cls">Banu</h2>
-    <p>Rahul</p>
-    <p class="cls">Soundarya</p>
-    <h2 class="cls">Ravi</h2>
-    <p>Tara</p>
+    <div id="parent">
+        <h1 id="demo">Arya</h1>
+        <p>Riya</p>
+        <h2 class="cls" id="last">Banu</h2>
+        <p>Rahul</p>
+        <p class="cls">Soundarya</p>
+        <h2 class="cls">Ravi</h2>
+        <p>Tara</p>
+    </div>
     <script>
         //DOM methods
         //1. document.getElementById()
@@ -43,6 +45,39 @@
         //3. document.title
         console.log(document.title);
         
+        //DOM Manipulation
+        //1. Creating an Element - document.createElement()
+        let n=document.createElement("h1");
+        console.log(n);
+
+        //2. Adding an Text - innerText - property
+        n.innerText="M S Dhoni";
+        console.log(n);
+
+            //Example 2:
+            let m=document.createElement("p");
+            console.log(m);
+            m.innerText="Suresh Raina";
+        
+        //3. Adding an Element in DOM - AppendChild()
+        let parent=document.getElementById("parent");
+        console.log(parent);
+
+        parent.appendChild(n);
+        parent.appendChild(m);
+        console.log(parent);
+
+        //4. Remove an Element from DOM - remove();
+        let last=document.getElementById("last");
+        console.log(last);
+        last.remove();
+        console.log(parent);
+
+        m.remove();
+        console.log(parent);
+        
+        
+            
         
         
 

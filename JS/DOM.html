@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JS</title>
+</head>
+<body>
+    <h1 id="demo">Arya</h1>
+    <p>Riya</p>
+    <h2 class="cls">Banu</h2>
+    <p>Rahul</p>
+    <p class="cls">Soundarya</p>
+    <h2 class="cls">Ravi</h2>
+    <p>Tara</p>
+    <script>
+        //DOM methods
+        //1. document.getElementById()
+        let a=document.getElementById("demo");
+        console.log(a);
+
+        //2. document.getElementsByClassName()
+        let b=document.getElementsByClassName("cls");
+        console.log(b);
+
+        // 3. document.getElementsByTagName()
+        let c=document.getElementsByTagName("p");
+        console.log(c);
+
+        //4. document.querySelector();
+        let d=document.querySelector("p");
+        console.log(d);
+
+        //5. document.querySelectorAll();
+        let e=document.querySelectorAll("p");
+        console.log(e);
+
+        //DOM properties
+        //1. document.head
+        console.log(document.head);
+        //2. document.body
+        console.log(document.body);
+        //3. document.title
+        console.log(document.title);
+        
+        
+        
+
+
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

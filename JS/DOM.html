@@ -8,11 +8,11 @@
 <body>
     <div id="parent">
         <h1 id="demo">Arya</h1>
-        <p>Riya</p>
+        <p id="riya">Riya</p>
         <h2 class="cls" id="last">Banu</h2>
-        <p>Rahul</p>
-        <p class="cls">Soundarya</p>
-        <h2 class="cls">Ravi</h2>
+        <p id="rahul">Rahul</p>
+        <p class="cls" id="soundarya">Soundarya</p>
+        <h2 class="cls" id="ravi">Ravi</h2>
         <p>Tara</p>
     </div>
     <script>
@@ -76,7 +76,47 @@
         m.remove();
         console.log(parent);
         
+        //5. Inserting an Element - insertBefore();
+        console.log(parent);
+
+        a=document.getElementById("demo");
+        console.log(a);
+        parent.insertBefore(n,a);
+        console.log(parent);
+
+        let Soundarya=document.getElementById("soundarya");
+        console.log(Soundarya);
+        let Riya=document.getElementById("riya");
+        console.log(Riya);
+        parent.insertBefore(Soundarya,Riya);
+        console.log(parent);
+
+        //6. Replacing an Element
+        let Rahul=document.getElementById("rahul");
+        console.log(Rahul);
+        a=document.getElementById("demo");
+        console.log(a);
+        a.replaceChildren(Rahul);
+        console.log(parent);
         
+        //Difference between InnerText and innerHTML
+        //InnerText:
+        console.log(parent.innerText);
+        //InnerHTML
+        console.log(parent.innerHTML);
+        
+        
+        
+        
+        
+        
+
+        
+
+
+
+
+                
             
         
         

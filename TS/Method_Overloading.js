@@ -1,7 +1,7 @@
 "use strict";
 class Main {
     add(a, b, c) {
-        if (c === undefined) {
+        if (c == undefined) {
             return a + b;
         }
         else {

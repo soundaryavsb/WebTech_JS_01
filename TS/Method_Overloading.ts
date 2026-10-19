@@ -2,7 +2,7 @@ class Main{
     add(a:number,b:number):number;
     add(a:number,b:number,c?:number):number;
     add(a:number,b:number,c?:number):number{
-        if(c===undefined)
+        if(c==undefined)
         {
             return a+b;
         }

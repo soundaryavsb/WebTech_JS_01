@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Json object
+        let jsonObj=`{
+            "name":"Arya",
+            "age":28,
+            "city":"Kochi",
+            "state":"Kerala"
+        }`
+        console.log(jsonObj);
+        //JSON.parse() --> convert json to normal object
+        let a=JSON.parse(jsonObj);
+        console.log(a);
+        
+        //Normal Object
+        let person={
+            name:"Raya",
+            age:56,
+            city:"Karur",
+            state:"TN"
+        }
+        console.log(person);
+
+        //JSON.stringify() --> convert normal object to json object
+        let b=JSON.stringify(person);
+        console.log(b);
+        
+        
+    </script>
+</body>
+</html>

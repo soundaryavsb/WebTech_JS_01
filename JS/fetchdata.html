@@ -7,6 +7,8 @@
 </head>
 <body>
     <script>
+        //Fetch data from url - json data
+        // Example 1:
         async function fetchData() {
             try {
                 //All data
@@ -24,6 +26,19 @@
             }
         }
         fetchData();
+        
+        //Example 2:
+        async function FetchJson2(params) {
+         try {
+            let result=await fetch("https://jsonplaceholder.typicode.com/users");
+            let data=await result.json();
+            console.log(data);
+         } catch (error) {
+            console.log("FetchJson error messgae");
+         }   
+        }
+        FetchJson2();
+
     </script>
 </body>
 </html>

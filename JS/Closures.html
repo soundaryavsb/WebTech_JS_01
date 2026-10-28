@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Example 1:
+        function Outer(){
+            let Count=0
+            return function Inner(){
+                Count++;
+                console.log(Count);
+            }
+        }
+        let a=Outer();
+        a();
+        a();
+        a();
+        //Example 2:
+        function OuterFunction(){
+            let OuterVariable="I am Outer..."
+            function InnerFunction(){
+                console.log(OuterVariable);
+            }
+            return InnerFunction
+        }
+        let b=OuterFunction();
+        b();
+        b();
+    </script>
+</body>
+</html>

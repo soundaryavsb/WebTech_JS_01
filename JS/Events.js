@@ -24,6 +24,8 @@ div.onmouseover=()=>{
 let demo=document.getElementById("demo");
 let color=()=>{
     demo.style.color="red"
+    demo.style.border="12px double blue"
+    demo.style.backgroundColor="yellow"
 }
 
 

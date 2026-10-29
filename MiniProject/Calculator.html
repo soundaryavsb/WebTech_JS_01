@@ -12,38 +12,51 @@
     <label for="">Enter Number 2</label>
     <input text="number" id="number2"> <br><br>
 
-    <button onclick="addition()">Add</button>
-    <button onclick="subtraction()">Sub</button>
-    <button onclick="multiplication()">Mul</button>
-    <button onclick="division()">Div</button> <br><br>
+    <button onclick="addition()" id="addButton">Add</button>
+    <button onclick="subtraction()" id="subButton">Sub</button>
+    <button onclick="multiplication()" id="mulButton">Mul</button>
+    <button onclick="division()" id="divButton">Div</button> <br><br>
     
     <label for="">Result : </label>
     <strong id="output"></strong>
 
     <script>
-        //Addition
-        function addition(){
+        function getNumbers(){
             var Num1=document.getElementById("number1").value
             var Num2=document.getElementById("number2").value
+            return {Num1,Num2};
+        }
+        //Addition
+        
+        function addition(){
+            let {Num1,Num2}=getNumbers();
             let add=parseInt(Num1)+parseInt(Num2);
             console.log(add);
             document.getElementById("output").innerHTML=add
+            //Styling
+            let addButton=document.getElementById("addButton");
+            addButton.style.color="Green";
         }
+        
         //Substraction
         function subtraction(){
-            var Num1=document.getElementById("number1").value
-            var Num2=document.getElementById("number2").value
+            let {Num1,Num2}=getNumbers();   
             let sub=Num1-Num2;
             console.log(sub);
             document.getElementById("output").innerHTML=sub
+            //Styling
+            let subButton=document.getElementById("subButton");
+            subButton.style.color="Pink";
         }
         //Multiplication
         function multiplication(){
-            var Num1=document.getElementById("number1").value
-            var Num2=document.getElementById("number2").value
+            let {Num1,Num2}=getNumbers();
             let mul=Num1*Num2;
             console.log(mul);
             document.getElementById("output").innerHTML=mul
+            //Styling
+            let mulButton=document.getElementById("mulButton");
+            mulButton.style.color="Yellow";
         }
         //Division
         function division(){
@@ -52,6 +65,9 @@
             let div=Num1/Num2;
             console.log(div);
             document.getElementById("output").innerHTML=div
+            //Styling
+            let divButton=document.getElementById("divButton");
+            divButton.style.color="Orange";
         }
     </script>
 
